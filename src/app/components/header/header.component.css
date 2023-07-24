@@ -49,6 +49,7 @@
   box-sizing: border-box;
   padding: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {
