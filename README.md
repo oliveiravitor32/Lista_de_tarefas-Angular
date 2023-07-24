@@ -25,3 +25,23 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Online project
+https://note-app-oliveiravitor32.vercel.app/
+
+
+# NoteApp
+
+Este projeto foi criado utilizando [Angular CLI](https://github.com/angular/angular-cli) versão 16.1.1.
+
+## Server de desenvolvimento
+
+Rodar `ng serve` server de desenvolvimento. Vá para `http://localhost:4200/`. A aplicação é recarregada automaticamente salvando as alterações dos arquivos.
+
+## Obtendo ajuda
+
+Para melhor entendimento sobre o desenvimento em Angular CLI use `ng help` ou busque ajuda em [Angular CLI Overview and Command Reference](https://angular.io/cli).
+
+## Projeto online
+
+https://note-app-oliveiravitor32.vercel.app/
