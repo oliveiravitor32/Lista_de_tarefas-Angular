@@ -1,0 +1,58 @@
+.header {
+  background-color: #25a18e;
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  height: 9%;
+}
+
+.text-input {
+  padding: 15px;
+  width: 30vw;
+  border: none;
+  border-radius: 8px;
+}
+.btn-new-note {
+  position: absolute;
+  text-indent: -9999px;
+  padding: 15px 24px;
+  background-image: url(../../../assets/icons/add.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 8px;
+  border: none;
+  background-color: #7ae582;
+  right: 20px;
+}
+.btn-new-note:active {
+  background-color: #4ca350;
+}
+.btn-new-note:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.link-home {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 28px;
+}
+.link-home:hover {
+  border: 2px solid white;
+  opacity: 0.9;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .text-input {
+    width: 45vw;
+  }
+}

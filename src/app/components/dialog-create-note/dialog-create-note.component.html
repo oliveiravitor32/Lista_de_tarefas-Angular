@@ -1,0 +1,42 @@
+<div class="dialog-container">
+  <h1 mat-dialog-title class="dialog-title">Create new note</h1>
+  <div mat-dialog-content class="dialog-content">
+    <form [formGroup]="noteForm" class="dialog-form">
+      <div class="container-input-label">
+        <label for="noteTitle" class="dialog-label">Note Title:</label>
+        <input
+          id="noteTitle"
+          placeholder="title..."
+          formControlName="noteTitle"
+          name="noteTitle"
+          required
+          class="dialog-input"
+        />
+      </div>
+      <div class="container-input-label">
+        <label for="noteDescription" class="dialog-label"
+          >Note Description:</label
+        >
+        <input
+          id="noteDescription"
+          placeholder="description..."
+          formControlName="noteDescription"
+          name="noteDescription"
+          required
+          class="dialog-input"
+        />
+      </div>
+    </form>
+  </div>
+  <div mat-dialog-actions class="dialog-actions">
+    <button
+      mat-button
+      class="button -accept"
+      (click)="createNote()"
+      [disabled]="noteForm.invalid"
+    >
+      Confirm
+    </button>
+    <button mat-button mat-dialog-close class="button -cancel">Cancel</button>
+  </div>
+</div>

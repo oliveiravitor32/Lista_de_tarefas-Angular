@@ -1,0 +1,30 @@
+<section class="section-notes">
+  <ul class="container-notes">
+    <li *ngFor="let note of notes | filterNotes : filterText" class="note">
+      <h2
+        class="note-title"
+        routerLink="/note/{{ note.id }}"
+        (click)="handleGoToNote()"
+      >
+        {{ note.noteTitle }}
+      </h2>
+      <p class="note-description">{{ note.noteDescription }}</p>
+      <div class="container-btns">
+        <button
+          title="Rename"
+          class="btn -rename-note"
+          (click)="handleRenameNote(note)"
+        >
+          Rename note
+        </button>
+        <button
+          title="Delete"
+          class="btn -delete-note"
+          (click)="handleDeleteNote(note)"
+        >
+          Delete note
+        </button>
+      </div>
+    </li>
+  </ul>
+</section>

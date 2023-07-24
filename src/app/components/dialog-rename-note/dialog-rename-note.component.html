@@ -1,0 +1,42 @@
+<div class="dialog-container">
+  <h1 mat-dialog-title class="dialog-title">Rename note</h1>
+  <div mat-dialog-content class="dialog-content">
+    <form [formGroup]="renameNoteForm" class="dialog-form">
+      <div class="container-input-label">
+        <label for="renameTitle" class="dialog-label">New Note Title:</label>
+        <input
+          id="renameTitle"
+          placeholder="New title..."
+          formControlName="noteTitle"
+          name="noteTitle"
+          required
+          class="dialog-input"
+        />
+      </div>
+      <div class="container-input-label">
+        <label for="renameDescription" class="dialog-label"
+          >New Note Description:</label
+        >
+        <input
+          id="renameDescription"
+          placeholder="New description..."
+          formControlName="noteDescription"
+          name="noteDescription"
+          required
+          class="dialog-input"
+        />
+      </div>
+    </form>
+  </div>
+  <div mat-dialog-actions class="dialog-actions">
+    <button
+      mat-button
+      class="button -accept"
+      [disabled]="renameNoteForm.invalid"
+      (click)="renameNote()"
+    >
+      Confirm
+    </button>
+    <button mat-button mat-dialog-close class="button -cancel">Cancel</button>
+  </div>
+</div>

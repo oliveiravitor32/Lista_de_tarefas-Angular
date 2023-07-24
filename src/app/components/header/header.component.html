@@ -1,0 +1,16 @@
+<header class="header">
+  <form *ngIf="userInHome; else userNotInHome">
+    <input
+      type="text"
+      [(ngModel)]="note"
+      name="note"
+      placeholder="Search note..."
+      class="text-input"
+      (input)="handleSearch($event)"
+    />
+  </form>
+  <ng-template #userNotInHome>
+    <a (click)="goToHome()" class="link-home">Home</a>
+  </ng-template>
+  <button class="btn-new-note" (click)="newNote()">new note</button>
+</header>

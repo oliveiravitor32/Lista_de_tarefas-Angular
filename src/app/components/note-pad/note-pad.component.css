@@ -1,0 +1,87 @@
+.section-notes {
+  width: 100%;
+  height: 91%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-notes {
+  max-width: 800px;
+  width: 60%;
+  height: 100%;
+  background-color: #d5e4db;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  padding: 20px 10px 40px 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  box-shadow: -1px 10px 14px 0px rgba(0, 0, 0, 0.75);
+}
+.container-btns {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.note {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid rgb(87, 85, 85);
+  box-sizing: border-box;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+.note-title:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.note-title {
+  width: fit-content;
+  max-width: 65%;
+  margin: 0;
+  word-wrap: break-word;
+}
+.note-description {
+  word-wrap: break-word;
+  width: 100%;
+  margin-bottom: 4px;
+}
+.btn {
+  text-indent: -99999px;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.btn.-delete-note {
+  background-image: url(../../../assets/icons/delete-note.svg);
+  background-color: #e63f3f;
+}
+.btn.-rename-note {
+  background-image: url(../../../assets/icons/rename.svg);
+  background-color: #d8c944;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+  .container-notes {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .container-notes {
+    width: 100%;
+  }
+}

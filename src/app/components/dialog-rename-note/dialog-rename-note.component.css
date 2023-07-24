@@ -1,0 +1,135 @@
+.dialog-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-bottom: 15px;
+  background-color: #bad3da;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.dialog-content {
+  width: 30vw;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.dialog-title {
+  box-sizing: border-box;
+  color: black;
+  height: 10%;
+  border-bottom: 1px solid black;
+}
+.dialog-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 10%;
+  box-sizing: border-box;
+  padding: 0;
+}
+.dialog-form {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.dialog-label {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.dialog-input {
+  padding: 5px;
+  background-color: #b2dad4;
+  outline: none;
+  border: none;
+  color: black;
+  border-radius: 5px;
+}
+.container-input-label {
+  box-sizing: border-box;
+  width: 90%;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: #004e64;
+  border-radius: 10px;
+}
+
+.button {
+  width: 45px;
+  height: 45px;
+  border-radius: 40%;
+  border: none;
+}
+.button:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  border: 3px solid #fff;
+}
+.button.-accept {
+  text-indent: -9999px;
+  background-color: #008f45;
+  background-image: url(../../../assets/icons/confirm.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+}
+.button.-accept:active {
+  background-color: #0b5f34;
+}
+.button.-cancel {
+  text-indent: -9999px;
+  background-color: #a80501;
+  background-image: url(../../../assets/icons/cancel.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+}
+.button.-cancel:active {
+  background-color: #7a0d0b;
+}
+
+@media screen and (max-width: 1000px) {
+  .dialog-container {
+    width: 55vw;
+  }
+  .container-input-label {
+    width: 45vw;
+  }
+  .dialog-input {
+    width: 40vw;
+  }
+  .dialog-content {
+    width: 55vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dialog-container {
+    width: 80vw;
+  }
+  .dialog-content {
+    width: 80vw;
+  }
+  .container-input-label {
+    width: 70vw;
+  }
+  .dialog-input {
+    width: 95%;
+  }
+}

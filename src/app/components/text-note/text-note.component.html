@@ -1,0 +1,13 @@
+<section class="section-book">
+  <h2 class="title">{{ textNote.noteTitle }}</h2>
+  <textarea
+    class="book"
+    id="textArea"
+    cols="30"
+    rows="10"
+    [(ngModel)]="text"
+    name="text"
+    (input)="textChanged()"
+  ></textarea>
+  <button class="btn-save" (click)="saveText()">Save</button>
+</section>
