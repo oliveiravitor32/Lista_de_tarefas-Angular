@@ -5,6 +5,7 @@ Este é um projeto de uma aplicação de bloco de notas criada com Angular.
 
 ## Características
 - Navegação single page
+- Barra de busca para notas
 - Criar notas
 - Adicionar textos para cada nota.
 - Renomear/Alterar notas.
@@ -33,6 +34,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Features
 - Navigation Single Page
+- Search bar for notes
 - Create notes
 - Add texts to each note.
 - Rename/Change notes.
